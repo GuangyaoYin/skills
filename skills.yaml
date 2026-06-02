@@ -1,0 +1,36 @@
+﻿skills:
+  - name: nsfc-project-review
+    repository: GuangyaoYin/skill-nsfc-project-review
+    url: https://github.com/GuangyaoYin/skill-nsfc-project-review
+    path: .
+    language: zh-CN
+    category: research-review
+    description: Batch review National Natural Science Foundation of China project application PDFs and generate formal Chinese communication-review outputs.
+    install: python ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-github.py --repo GuangyaoYin/skill-nsfc-project-review --path .
+
+  - name: paper2pdf
+    repository: GuangyaoYin/skill-paper2pdf
+    url: https://github.com/GuangyaoYin/skill-paper2pdf
+    path: paper2pdf
+    language: zh-CN,en
+    category: academic-formatting
+    description: Format academic manuscripts into polished DOCX/PDF-style layouts using journal templates, publisher guidelines, sample PDFs, or SciSpace format links.
+    install: python ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-github.py --repo GuangyaoYin/skill-paper2pdf --path paper2pdf
+
+  - name: review-response-docx
+    repository: GuangyaoYin/skill-review-response-docx
+    url: https://github.com/GuangyaoYin/skill-review-response-docx
+    path: review-response-docx
+    language: zh-CN,en
+    category: academic-revision
+    description: Draft, analyze, format, and package point-by-point reviewer responses and revised manuscript DOCX files.
+    install: python ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-github.py --repo GuangyaoYin/skill-review-response-docx --path review-response-docx
+
+  - name: skill-endnote-research
+    repository: GuangyaoYin/skill-endnote-research
+    url: https://github.com/GuangyaoYin/skill-endnote-research
+    path: .
+    language: zh-CN,en
+    category: literature-research
+    description: Analyze research ideas, search a local EndNote literature index, copy matching PDFs, and generate a literature-review folder.
+    install: python ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-github.py --repo GuangyaoYin/skill-endnote-research --path .
