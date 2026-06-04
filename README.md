@@ -1,4 +1,4 @@
-﻿# Guangyao Yin's Codex Skills
+# Guangyao Yin's Codex Skills
 
 这里是我维护的 Codex skills 总索引，参考 `lovstudio/skills` 的组织方式整理。每个 skill 通常放在独立 GitHub 仓库中，本仓库提供统一目录、安装命令、适用场景和机器可读清单。
 
@@ -22,6 +22,7 @@ python ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-github
 | `paper2pdf` | 将学术论文按期刊模板、出版社指南、样例 PDF 或 SciSpace 链接排版为 DOCX/PDF 风格稿。 | [`skill-paper2pdf`](https://github.com/GuangyaoYin/skill-paper2pdf) | `paper2pdf` |
 | `review-response-docx` | 根据审稿意见和论文原文逐条撰写 Response to Reviewers，并生成返修分析、回复信、标红修订稿和 clean version。 | [`skill-review-response-docx`](https://github.com/GuangyaoYin/skill-review-response-docx) | `review-response-docx` |
 | `skill-endnote-research` | 根据研究想法检索本地 EndNote 文献库，生成文献清单、复制 PDF 并整理综述文件夹。 | [`skill-endnote-research`](https://github.com/GuangyaoYin/skill-endnote-research) | `.` |
+| `skillscreator` | 将模糊任务想法、示例材料、工作流或已有仓库转化为可安装、可复用、可上架 GitHub 的 Codex skill。 | [`skill-skillscreator`](https://github.com/GuangyaoYin/skill-skillscreator) | `skillscreator` |
 
 ## 安装命令
 
@@ -55,6 +56,14 @@ python ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-github
 python ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-github.py \
   --repo GuangyaoYin/skill-endnote-research \
   --path .
+```
+
+### skillscreator
+
+```bash
+python ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-github.py \
+  --repo GuangyaoYin/skill-skillscreator \
+  --path skillscreator
 ```
 
 ## 机器可读清单

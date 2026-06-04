@@ -34,3 +34,12 @@
     category: literature-research
     description: Analyze research ideas, search a local EndNote literature index, copy matching PDFs, and generate a literature-review folder.
     install: python ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-github.py --repo GuangyaoYin/skill-endnote-research --path .
+
+  - name: skillscreator
+    repository: GuangyaoYin/skill-skillscreator
+    url: https://github.com/GuangyaoYin/skill-skillscreator
+    path: skillscreator
+    language: zh-CN,en
+    category: skill-development
+    description: Design, generate, validate, and optionally publish Codex skills from task ideas, workflows, examples, documents, webpages, repositories, or prior context.
+    install: python ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-github.py --repo GuangyaoYin/skill-skillscreator --path skillscreator
