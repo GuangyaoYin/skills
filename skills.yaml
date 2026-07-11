@@ -35,6 +35,15 @@
     description: Analyze research ideas, search a local EndNote literature index, copy matching PDFs, and generate a literature-review folder.
     install: python ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-github.py --repo GuangyaoYin/skill-endnote-research --path .
 
+  - name: locflow
+    repository: GuangyaoYin/skills
+    url: https://github.com/GuangyaoYin/skills/tree/main/skills/locflow
+    path: skills/locflow
+    language: zh-CN,en
+    category: seismology-processing
+    description: Manage an end-to-end LOC-FLOW earthquake catalog workflow with PhaseNet, REAL, VELEST, hypoDD dtct, FDTCC, hypoDD dtcc, QC gates, PyGMT figures, and final workflow reports.
+    install: python ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-github.py --repo GuangyaoYin/skills --path skills/locflow
+
   - name: skillscreator
     repository: GuangyaoYin/skill-skillscreator
     url: https://github.com/GuangyaoYin/skill-skillscreator
