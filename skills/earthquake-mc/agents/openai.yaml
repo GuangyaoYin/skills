@@ -1,0 +1,4 @@
+interface:
+  display_name: "Earthquake Mc"
+  short_description: "Estimate catalog completeness magnitude Mc"
+  default_prompt: "Use $earthquake-mc to estimate Mc for this earthquake catalog and explain the completeness criterion."
