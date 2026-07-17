@@ -23,6 +23,7 @@ Restart Codex after installation.
 | `review-response-docx` | Draft point-by-point reviewer responses and create formatted response letters, marked revised manuscripts, and clean versions. | [`skill-review-response-docx`](https://github.com/GuangyaoYin/skill-review-response-docx) | `review-response-docx` |
 | `skill-endnote-research` | Search a local EndNote library from a research idea, collect matching PDFs, and generate a literature-review folder. | [`skill-endnote-research`](https://github.com/GuangyaoYin/skill-endnote-research) | `.` |
 | `locflow` | Manage the LOC-FLOW earthquake catalog workflow, including PhaseNet, REAL, VELEST, hypoDD dtct, FDTCC, hypoDD dtcc, QC, plotting, and reporting. | [`skills`](https://github.com/GuangyaoYin/skills) | `skills/locflow` |
+| `earthquake-mc` | Estimate earthquake catalog completeness magnitude Mc with normalized cumulative occurrence curves, threshold diagnostics, and reproducible reports. | [`skills`](https://github.com/GuangyaoYin/skills) | `skills/earthquake-mc` |
 | `skillscreator` | Turn task ideas, examples, workflows, documents, webpages, or repositories into reusable GitHub-ready Codex skills. | [`skill-skillscreator`](https://github.com/GuangyaoYin/skill-skillscreator) | `skillscreator` |
 
 ## Manifest
