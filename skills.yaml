@@ -1,4 +1,4 @@
-﻿skills:
+skills:
   - name: nsfc-project-review
     repository: GuangyaoYin/skill-nsfc-project-review
     url: https://github.com/GuangyaoYin/skill-nsfc-project-review
@@ -43,6 +43,15 @@
     category: seismology-processing
     description: Manage an end-to-end LOC-FLOW earthquake catalog workflow with PhaseNet, REAL, VELEST, hypoDD dtct, FDTCC, hypoDD dtcc, QC gates, PyGMT figures, and final workflow reports.
     install: python ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-github.py --repo GuangyaoYin/skills --path skills/locflow
+
+  - name: earthquake-mc
+    repository: GuangyaoYin/skills
+    url: https://github.com/GuangyaoYin/skills/tree/main/skills/earthquake-mc
+    path: skills/earthquake-mc
+    language: zh-CN,en
+    category: seismology-statistics
+    description: Estimate earthquake catalog completeness magnitude Mc using normalized cumulative occurrence curves, candidate-threshold diagnostics, and reproducible reports.
+    install: python ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-github.py --repo GuangyaoYin/skills --path skills/earthquake-mc
 
   - name: skillscreator
     repository: GuangyaoYin/skill-skillscreator
