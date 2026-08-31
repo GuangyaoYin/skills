@@ -53,6 +53,15 @@ skills:
     description: Estimate earthquake catalog completeness magnitude Mc using normalized cumulative occurrence curves, candidate-threshold diagnostics, and reproducible reports.
     install: python ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-github.py --repo GuangyaoYin/skills --path skills/earthquake-mc
 
+  - name: improve-journal-acceptance
+    repository: GuangyaoYin/skills
+    url: https://github.com/GuangyaoYin/skills/tree/main/skills/improve-journal-acceptance
+    path: skills/improve-journal-acceptance
+    language: zh-CN,en
+    category: academic-submission
+    description: Review and improve academic manuscript submission packages from an editor's perspective, including title, abstract, cover letter, figures, prior-work comparison, reviewer suggestions, resubmission, and transfer strategy.
+    install: python ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-github.py --repo GuangyaoYin/skills --path skills/improve-journal-acceptance
+
   - name: skillscreator
     repository: GuangyaoYin/skill-skillscreator
     url: https://github.com/GuangyaoYin/skill-skillscreator
