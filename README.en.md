@@ -24,6 +24,7 @@ Restart Codex after installation.
 | `skill-endnote-research` | Search a local EndNote library from a research idea, collect matching PDFs, and generate a literature-review folder. | [`skill-endnote-research`](https://github.com/GuangyaoYin/skill-endnote-research) | `.` |
 | `locflow` | Manage the LOC-FLOW earthquake catalog workflow, including PhaseNet, REAL, VELEST, hypoDD dtct, FDTCC, hypoDD dtcc, QC, plotting, and reporting. | [`skills`](https://github.com/GuangyaoYin/skills) | `skills/locflow` |
 | `earthquake-mc` | Estimate earthquake catalog completeness magnitude Mc with normalized cumulative occurrence curves, threshold diagnostics, and reproducible reports. | [`skills`](https://github.com/GuangyaoYin/skills) | `skills/earthquake-mc` |
+| `improve-journal-acceptance` | Audit manuscript submission packages from an editor's perspective, covering title, abstract, cover letter, figures, reviewers, resubmission, and transfers. | [`skills`](https://github.com/GuangyaoYin/skills) | `skills/improve-journal-acceptance` |
 | `skillscreator` | Turn task ideas, examples, workflows, documents, webpages, or repositories into reusable GitHub-ready Codex skills. | [`skill-skillscreator`](https://github.com/GuangyaoYin/skill-skillscreator) | `skillscreator` |
 
 ## Manifest
