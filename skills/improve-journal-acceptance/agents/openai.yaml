@@ -1,0 +1,4 @@
+interface:
+  display_name: "Improve Journal Acceptance"
+  short_description: "Pre-submit checks for journal acceptance"
+  default_prompt: "Use $improve-journal-acceptance to review this manuscript package before journal submission."
