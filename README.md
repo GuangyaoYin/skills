@@ -24,6 +24,7 @@ python ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-github
 | `skill-endnote-research` | 根据研究想法检索本地 EndNote 文献库，生成文献清单、复制 PDF 并整理综述文件夹。 | [`skill-endnote-research`](https://github.com/GuangyaoYin/skill-endnote-research) | `.` |
 | `locflow` | 管理 LOC-FLOW 地震目录处理流程，覆盖 PhaseNet、REAL、VELEST、hypoDD dtct、FDTCC 和 hypoDD dtcc 的审计、质控、制图和报告。 | [`skills`](https://github.com/GuangyaoYin/skills) | `skills/locflow` |
 | `earthquake-mc` | 使用归一化累积地震发生曲线估计地震目录完备震级 Mc，并生成候选阈值曲线、分离度表和方法说明。 | [`skills`](https://github.com/GuangyaoYin/skills) | `skills/earthquake-mc` |
+| `improve-journal-acceptance` | 按编辑视角检查投稿包，优化标题摘要、cover letter、前人工作比较、图件信息、审稿人建议和重投/转投策略。 | [`skills`](https://github.com/GuangyaoYin/skills) | `skills/improve-journal-acceptance` |
 | `skillscreator` | 将模糊任务想法、示例材料、工作流或已有仓库转化为可安装、可复用、可上架 GitHub 的 Codex skill。 | [`skill-skillscreator`](https://github.com/GuangyaoYin/skill-skillscreator) | `skillscreator` |
 
 ## 安装命令
@@ -76,6 +77,14 @@ python ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-github
   --path skills/earthquake-mc
 ```
 
+### improve-journal-acceptance
+
+```bash
+python ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-github.py \
+  --repo GuangyaoYin/skills \
+  --path skills/improve-journal-acceptance
+```
+
 ### skillscreator
 
 ```bash
@@ -110,6 +119,10 @@ skills/
     │   │   └── openai.yaml
     │   └── scripts/
     │       └── estimate_mc_normalized.py
+    ├── improve-journal-acceptance/
+    │   ├── SKILL.md
+    │   └── agents/
+    │       └── openai.yaml
     └── locflow/
         └── SKILL.md
 ```
