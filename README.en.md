@@ -25,6 +25,8 @@ Restart Codex after installation.
 | `locflow` | Manage the LOC-FLOW earthquake catalog workflow, including PhaseNet, REAL, VELEST, hypoDD dtct, FDTCC, hypoDD dtcc, QC, plotting, and reporting. | [`skills`](https://github.com/GuangyaoYin/skills) | `skills/locflow` |
 | `earthquake-mc` | Estimate earthquake catalog completeness magnitude Mc with normalized cumulative occurrence curves, threshold diagnostics, and reproducible reports. | [`skills`](https://github.com/GuangyaoYin/skills) | `skills/earthquake-mc` |
 | `improve-journal-acceptance` | Audit manuscript submission packages from an editor's perspective, covering title, abstract, cover letter, figures, reviewers, resubmission, and transfers. | [`skills`](https://github.com/GuangyaoYin/skills) | `skills/improve-journal-acceptance` |
+| `academic-introduction-polisher` | Polish, translate, and structure academic Introductions with calibrated claims and clear research gaps. | [`skills`](https://github.com/GuangyaoYin/skills/tree/main/skills/academic-introduction-polisher) | `skills/academic-introduction-polisher` |
+| `academic-discussion-polisher` | Polish, translate, and structure academic Discussions around evidence, mechanisms, alternatives, and limitations. | [`skills`](https://github.com/GuangyaoYin/skills/tree/main/skills/academic-discussion-polisher) | `skills/academic-discussion-polisher` |
 | `skillscreator` | Turn task ideas, examples, workflows, documents, webpages, or repositories into reusable GitHub-ready Codex skills. | [`skill-skillscreator`](https://github.com/GuangyaoYin/skill-skillscreator) | `skillscreator` |
 
 ## Manifest

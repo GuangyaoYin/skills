@@ -70,3 +70,21 @@ skills:
     category: skill-development
     description: Design, generate, validate, and optionally publish Codex skills from task ideas, workflows, examples, documents, webpages, repositories, or prior context.
     install: python ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-github.py --repo GuangyaoYin/skill-skillscreator --path skillscreator
+
+  - name: academic-introduction-polisher
+    repository: GuangyaoYin/skills
+    url: https://github.com/GuangyaoYin/skills/tree/main/skills/academic-introduction-polisher
+    path: skills/academic-introduction-polisher
+    language: zh-CN,en
+    category: academic-writing
+    description: Polish, translate, draft, or diagnose academic-paper Introduction sections with evidence-calibrated claims and clear research gaps.
+    install: python ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-github.py --repo GuangyaoYin/skills --path skills/academic-introduction-polisher
+
+  - name: academic-discussion-polisher
+    repository: GuangyaoYin/skills
+    url: https://github.com/GuangyaoYin/skills/tree/main/skills/academic-discussion-polisher
+    path: skills/academic-discussion-polisher
+    language: zh-CN,en
+    category: academic-writing
+    description: Polish, translate, draft, restructure, or diagnose academic-paper Discussion sections with evidence-to-mechanism reasoning and calibrated claims.
+    install: python ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-github.py --repo GuangyaoYin/skills --path skills/academic-discussion-polisher

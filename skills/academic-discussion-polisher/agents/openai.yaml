@@ -1,0 +1,5 @@
+interface:
+  display_name: "Academic Discussion Polisher"
+  short_description: "Polish, translate, and strengthen academic Discussions"
+  default_prompt: "Use $academic-discussion-polisher to translate, polish, and strengthen the logic of this academic Discussion."
+

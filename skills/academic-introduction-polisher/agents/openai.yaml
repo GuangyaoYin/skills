@@ -1,0 +1,5 @@
+interface:
+  display_name: "Academic Introduction Polisher"
+  short_description: "Polish, translate, and structure academic Introductions"
+  default_prompt: "Use $academic-introduction-polisher to polish, translate, and strengthen the logic of this academic Introduction."
+
