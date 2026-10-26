@@ -88,3 +88,12 @@ skills:
     category: academic-writing
     description: Polish, translate, draft, restructure, or diagnose academic-paper Discussion sections with evidence-to-mechanism reasoning and calibrated claims.
     install: python ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-github.py --repo GuangyaoYin/skills --path skills/academic-discussion-polisher
+
+  - name: research-ppt
+    repository: GuangyaoYin/skills
+    url: https://github.com/GuangyaoYin/skills/tree/main/skills/research-ppt
+    path: skills/research-ppt
+    language: zh-CN,en
+    category: research-presentation
+    description: Create editable research PowerPoint decks for lab meetings, supervisor discussions, progress reports, and paper reading through joint scientific argument and slide planning.
+    install: python ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-github.py --repo GuangyaoYin/skills --path skills/research-ppt

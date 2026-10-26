@@ -1,0 +1,4 @@
+interface:
+  display_name: "科研汇报 PPT"
+  short_description: "制作组会研究进展与文献汇报，梳理论证逻辑并交付可编辑科研PPT"
+  default_prompt: "用 $research-ppt 根据这些材料与我共同梳理汇报主线和逐页安排，再制作可编辑的科研汇报PPT。"
