@@ -23,7 +23,6 @@ python ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-github
 | `paper2pdf` | 将学术论文按期刊模板、出版社指南、样例 PDF 或 SciSpace 链接排版为 DOCX/PDF 风格稿。 | [`skill-paper2pdf`](https://github.com/GuangyaoYin/skill-paper2pdf) | `paper2pdf` |
 | `review-response-docx` | 根据审稿意见和论文原文逐条撰写 Response to Reviewers，并生成返修分析、回复信、标红修订稿和 clean version。 | [`skill-review-response-docx`](https://github.com/GuangyaoYin/skill-review-response-docx) | `review-response-docx` |
 | `skill-endnote-research` | 根据研究想法检索本地 EndNote 文献库，生成文献清单、复制 PDF 并整理综述文件夹。 | [`skill-endnote-research`](https://github.com/GuangyaoYin/skill-endnote-research) | `.` |
-| `locflow` | 管理 LOC-FLOW 地震目录处理流程，覆盖 PhaseNet、REAL、VELEST、hypoDD dtct、FDTCC 和 hypoDD dtcc 的审计、质控、制图和报告。 | [`skills`](https://github.com/GuangyaoYin/skills) | `skills/locflow` |
 | `earthquake-mc` | 使用归一化累积地震发生曲线估计地震目录完备震级 Mc，并生成候选阈值曲线、分离度表和方法说明。 | [`skills`](https://github.com/GuangyaoYin/skills) | `skills/earthquake-mc` |
 | `improve-journal-acceptance` | 按编辑视角检查投稿包，优化标题摘要、cover letter、前人工作比较、图件信息、审稿人建议和重投/转投策略。 | [`skills`](https://github.com/GuangyaoYin/skills) | `skills/improve-journal-acceptance` |
 | `academic-introduction-polisher` | 润色、翻译和梳理论文 Introduction 的论证结构与英文表达。 | [`skills`](https://github.com/GuangyaoYin/skills/tree/main/skills/academic-introduction-polisher) | `skills/academic-introduction-polisher` |
@@ -62,14 +61,6 @@ python ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-github
 python ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-github.py \
   --repo GuangyaoYin/skill-endnote-research \
   --path .
-```
-
-### locflow
-
-```bash
-python ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-github.py \
-  --repo GuangyaoYin/skills \
-  --path skills/locflow
 ```
 
 ### earthquake-mc
@@ -144,10 +135,8 @@ skills/
     │   │   └── openai.yaml
     │   └── scripts/
     │       └── estimate_mc_normalized.py
-    ├── improve-journal-acceptance/
-    │   ├── SKILL.md
-    │   └── agents/
-    │       └── openai.yaml
-    └── locflow/
-        └── SKILL.md
+    └── improve-journal-acceptance/
+        ├── SKILL.md
+        └── agents/
+            └── openai.yaml
 ```
