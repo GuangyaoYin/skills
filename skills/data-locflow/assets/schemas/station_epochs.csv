@@ -1,0 +1,2 @@
+network,station,latitude,longitude,elevation_m,start_time_utc,end_time_utc
+XX,EXAMPLE,0.0,0.0,0,2000-01-01T00:00:00Z,2000-01-02T00:00:00Z

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Data Loc-Flow"
+  short_description: "通用地震检测、绝对定位、双差精定位、震级与误差验收工作流"
+  default_prompt: "使用 $data-locflow 为我的研究区配置从原始波形到地震目录的流程，并核验输入、震级方法、定位误差和结果图计划。"

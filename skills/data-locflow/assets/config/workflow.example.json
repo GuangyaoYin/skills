@@ -1,0 +1,216 @@
+{
+  "schema_version": 2,
+  "status": "design_template_not_a_verified_backend_run",
+  "project": {
+    "name": "new_project",
+    "start_time_utc": null,
+    "end_time_utc": null,
+    "time_interval": "start_inclusive_end_exclusive",
+    "waveform_time_basis": null,
+    "region_west_east_south_north": null,
+    "coordinate_datum": null,
+    "depth_datum": null,
+    "output_root": "../runs/new_project"
+  },
+  "inputs": {
+    "waveforms": {
+      "path": null,
+      "glob": null,
+      "mode": "read_only",
+      "format": null
+    },
+    "stations": {
+      "path": null,
+      "format": "canonical_csv"
+    },
+    "responses": {
+      "path": null,
+      "format": "StationXML_or_audited_response_manifest"
+    },
+    "velocity_model": {
+      "path": null,
+      "format": "canonical_layer_csv"
+    },
+    "travel_table": {
+      "path": null,
+      "note": "generated with canonical model; assign path to preflight existing tables"
+    },
+    "hypodd_input": {
+      "path": null,
+      "note": "assign path to verify exact NLAY/TOP/VEL lengths"
+    }
+  },
+  "preprocess": {
+    "pick_target_sampling_rate_hz": null,
+    "sampling_rate_status": "resolve_from_selected_picker_model_then_explicit_resampling_policy",
+    "anti_alias_before_downsampling": true,
+    "channel_order": [
+      "E",
+      "N",
+      "Z"
+    ],
+    "missing_component_policy": "explicit_mask_or_reject_never_fabricate_signal",
+    "gaps_policy": "split_and_mask_no_unlogged_zero_fill",
+    "chunk_overlap_s": null,
+    "chunk_overlap_status": "proposed_test_against_model_receptive_field_and_travel_times",
+    "magnitude_input": "independent_physical_amplitude_branch_never_use_normalized_picker_input"
+  },
+  "travel_time_grid": {
+    "distance_max_deg": null,
+    "depth_max_km": null,
+    "distance_step_deg": null,
+    "depth_step_km": null,
+    "status": "derive_from_project_extent_model_and_backend_then_validate",
+    "order": "depth_major_distance_from_one_step",
+    "format": "REAL_FDTCC_10_column"
+  },
+  "picking": {
+    "backend": "PhaseNet",
+    "model_checkpoint": null,
+    "model_sha256": null,
+    "threshold_p": null,
+    "threshold_s": null,
+    "highpass_filter_hz": null,
+    "status": "select_and_validate_on_representative_project_data",
+    "timestamp_rule": "trace_start_utc_plus_sample_index_divided_by_actual_rate",
+    "parameter_search_plan": null
+  },
+  "association": {
+    "backend": "REAL",
+    "search_horizontal_half_width_deg": null,
+    "search_depth_range_km": null,
+    "search_horizontal_step_deg": null,
+    "search_depth_step_km": null,
+    "minimum_event_separation_s": null,
+    "minimum_p_picks": null,
+    "minimum_s_picks": null,
+    "minimum_total_picks": null,
+    "minimum_dual_phase_stations": null,
+    "residual_controls": null,
+    "surface_vp_km_s": null,
+    "surface_vs_km_s": null,
+    "travel_table_controls": "generate_from_verified_table_metadata",
+    "status": "project_parameter_search_required"
+  },
+  "absolute_location": {
+    "backend": "VELEST",
+    "mode": "location_only",
+    "maximum_station_distance_km": null,
+    "maximum_gap_deg": null,
+    "maximum_rms_s": null,
+    "station_corrections": null,
+    "depth_reference_policy": null,
+    "status": "project_model_geometry_and_pilot_tests_required"
+  },
+  "relative_location": {
+    "catalog_backend": "ph2dt_hypoDD_dtct",
+    "correlation_backend": "FDTCC",
+    "final_backend": "hypoDD_dtcc",
+    "maximum_input_depth_km": null,
+    "pairs_per_batch": null,
+    "batching_rule": "event_pairs_with_global_merge_not_fixed_event_time_windows",
+    "layer_model_rule": "derive_and_validate_exact_NLAY_TOP_VEL_from_canonical_model",
+    "vp_vs_rule": "explicit_conversion_policy_when_backend_only_accepts_constant_ratio",
+    "iteration_schedules": null,
+    "status": "project_connectivity_residual_and_stability_tests_required",
+    "resource_batching": "choose_from_available_memory_not_a_scientific_quality_threshold",
+    "cross_correlation": {
+      "p_window_before_s": null,
+      "p_window_after_s": null,
+      "s_window_before_s": null,
+      "s_window_after_s": null,
+      "frequency_band_hz": null,
+      "minimum_correlation": null,
+      "minimum_snr": null,
+      "maximum_shift_s": null,
+      "weight_mapping": null
+    }
+  },
+  "magnitude": {
+    "enabled": true,
+    "output_type": null,
+    "amplitude_branch": "response_corrected_unnormalized_waveforms",
+    "calibration": {
+      "validated_for_project": false,
+      "coefficient_file": null,
+      "method": null,
+      "applicability_metadata": null
+    },
+    "final_coordinate_distance_recalculation": true,
+    "event_aggregation": "median_of_accepted_station_magnitudes",
+    "mad_definition": "unscaled_median_absolute_deviation",
+    "missing_magnitude_policy": "retain_in_all_catalogue_with_reason_exclude_from_required_complete_view",
+    "target_instrument": null,
+    "measurement_window": null,
+    "signal_to_noise_threshold": null,
+    "component_combination": null,
+    "distance_definition": null
+  },
+  "uncertainty": {
+    "measurement_perturbation": {
+      "enabled": true,
+      "replicates": null,
+      "distribution": null,
+      "timing_uncertainty_model": null,
+      "seed": null,
+      "status": "estimate_from_project_data_and_test_interval_convergence"
+    },
+    "station_jackknife": true,
+    "velocity_model_sensitivity": true,
+    "cluster_reference_test": true,
+    "report_success_fraction": true,
+    "uncertainty_missing_policy": "unknown_never_zero"
+  },
+  "catalogue": {
+    "mandatory_core": [
+      "event_uid",
+      "origin_time_utc",
+      "longitude",
+      "latitude",
+      "depth_km",
+      "magnitude",
+      "magnitude_type"
+    ],
+    "additional_provenance": [
+      "catalog_source",
+      "final_relocation_stage",
+      "location_qc",
+      "magnitude_qc",
+      "model_hash",
+      "run_id"
+    ],
+    "template_matching": "optional_separate_branch_then_local_location_deduplication_and_source_specific_uncertainty",
+    "fallback_policy": "retain_lower_stage_in_all_catalogue_with_explicit_stage_and_reason",
+    "high_precision_gate": "must_pass_frozen_project_specific_accuracy_and_stability_thresholds",
+    "magnitude_column": "magnitude",
+    "magnitude_type_column": "magnitude_type"
+  },
+  "figures": {
+    "format": "PNG",
+    "dpi": 300,
+    "titles": false,
+    "remarks": false,
+    "default_count_callouts": false,
+    "coordinate_tick_font_pt": 13,
+    "legend_font_pt": 12,
+    "place_water_fault_font_pt": 12,
+    "colorbar_scale_font_pt": 13,
+    "depth_color_range_km": null,
+    "depth_range_applies_to": "colour_encoding_only_not_catalogue_filter",
+    "sidecars": [
+      "txt",
+      "json",
+      "tsv"
+    ],
+    "depth_color_range_policy": "derive_from_selected_data_or_explicit_project_override",
+    "styles_are_configurable": true,
+    "figure_plan_path": "figure_plan.json"
+  },
+  "scope": "research_area_independent",
+  "parameter_policy": {
+    "scientific_parameters": "null_requires_project_input_metadata_derivation_or_pilot_selection",
+    "engineering_parameters": "explicit_resource_budget_and_backend_constraints",
+    "case_studies": "examples_only_never_implicit_fallback",
+    "derived_values": "persist_value_source_method_and_hash_in_resolved_config"
+  }
+}

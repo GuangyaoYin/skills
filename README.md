@@ -18,6 +18,7 @@ python ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-github
 
 | Skill | 用途 | 仓库 | 安装路径 |
 | --- | --- | --- | --- |
+| `data-locflow` | 通用 LOC-FLOW 地震目录流程、项目配置、输入/目录检查、震级与定位误差及绘图规范；科学后端需另行接入。 | [`skills`](https://github.com/GuangyaoYin/skills/tree/main/skills/data-locflow) | `skills/data-locflow` |
 | `research-ppt` | 制作组会、导师讨论与研究进展 PPT，提供独立文献模式，先梳理论证与逐页安排，交付可编辑 PPTX 和备注。 | [`skills`](https://github.com/GuangyaoYin/skills/tree/main/skills/research-ppt) | `skills/research-ppt` |
 | `nsfc-project-review` | 批量评审国家自然科学基金项目申请书 PDF，生成中文通讯评审意见、评分/资助建议和横向比较。 | [`skill-nsfc-project-review`](https://github.com/GuangyaoYin/skill-nsfc-project-review) | `.` |
 | `paper2pdf` | 将学术论文按期刊模板、出版社指南、样例 PDF 或 SciSpace 链接排版为 DOCX/PDF 风格稿。 | [`skill-paper2pdf`](https://github.com/GuangyaoYin/skill-paper2pdf) | `paper2pdf` |
@@ -30,6 +31,14 @@ python ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-github
 | `skillscreator` | 将模糊任务想法、示例材料、工作流或已有仓库转化为可安装、可复用、可上架 GitHub 的 Codex skill。 | [`skill-skillscreator`](https://github.com/GuangyaoYin/skill-skillscreator) | `skillscreator` |
 
 ## 安装命令
+
+### data-locflow
+
+```bash
+python ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-github.py --repo GuangyaoYin/skills --path skills/data-locflow
+```
+
+包含通用流程参考、配置模板和管理检查工具，适用于不同研究区；完整科学后端仍需接入和验证。[下载 ZIP 分发包](dist/data-locflow-skill.zip)。
 
 ### nsfc-project-review
 

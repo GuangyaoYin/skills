@@ -88,3 +88,12 @@ skills:
     category: research-presentation
     description: Create editable research PowerPoint decks for lab meetings, supervisor discussions, progress reports, and paper reading through joint scientific argument and slide planning.
     install: python ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-github.py --repo GuangyaoYin/skills --path skills/research-ppt
+
+  - name: data-locflow
+    repository: GuangyaoYin/skills
+    url: https://github.com/GuangyaoYin/skills/tree/main/skills/data-locflow
+    path: skills/data-locflow
+    language: zh-CN,en
+    category: seismology-workflow
+    description: Research-area-independent LOC-FLOW workflow guidance, project templates, input and catalogue checks, magnitude and uncertainty specifications, and reproducible figure planning. Scientific backends require separate integration and validation.
+    install: python ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-github.py --repo GuangyaoYin/skills --path skills/data-locflow

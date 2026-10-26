@@ -18,6 +18,7 @@ Restart Codex after installation.
 
 | Skill | Purpose | Repository | Path |
 | --- | --- | --- | --- |
+| `data-locflow` | Research-area-independent LOC-FLOW guidance, project templates, input/catalog checks, magnitude and uncertainty specifications, and figure planning; scientific backends require integration. | [`skills`](https://github.com/GuangyaoYin/skills/tree/main/skills/data-locflow) | `skills/data-locflow` |
 | `research-ppt` | Create editable lab-meeting, supervisor-discussion, research-progress, and paper-reading PowerPoint decks through joint argument and slide planning. | [`skills`](https://github.com/GuangyaoYin/skills/tree/main/skills/research-ppt) | `skills/research-ppt` |
 | `nsfc-project-review` | Batch review NSFC proposal PDFs and generate formal Chinese communication-review comments, grades, and funding recommendations. | [`skill-nsfc-project-review`](https://github.com/GuangyaoYin/skill-nsfc-project-review) | `.` |
 | `paper2pdf` | Format academic manuscripts into journal-style DOCX/PDF layouts using journal templates, publisher guidelines, sample PDFs, or SciSpace links. | [`skill-paper2pdf`](https://github.com/GuangyaoYin/skill-paper2pdf) | `paper2pdf` |
@@ -28,6 +29,14 @@ Restart Codex after installation.
 | `academic-introduction-polisher` | Polish, translate, and structure academic Introductions with calibrated claims and clear research gaps. | [`skills`](https://github.com/GuangyaoYin/skills/tree/main/skills/academic-introduction-polisher) | `skills/academic-introduction-polisher` |
 | `academic-discussion-polisher` | Polish, translate, and structure academic Discussions around evidence, mechanisms, alternatives, and limitations. | [`skills`](https://github.com/GuangyaoYin/skills/tree/main/skills/academic-discussion-polisher) | `skills/academic-discussion-polisher` |
 | `skillscreator` | Turn task ideas, examples, workflows, documents, webpages, or repositories into reusable GitHub-ready Codex skills. | [`skill-skillscreator`](https://github.com/GuangyaoYin/skill-skillscreator) | `skillscreator` |
+
+## Data Loc-Flow installation
+
+```bash
+python ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-github.py --repo GuangyaoYin/skills --path skills/data-locflow
+```
+
+Includes generic workflow references, templates, and management checks. Scientific backends still require integration and validation. [Download the ZIP package](dist/data-locflow-skill.zip).
 
 ## Research PPT installation
 

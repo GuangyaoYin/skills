@@ -1,0 +1,266 @@
+{
+  "schema_version": 2,
+  "scope": "research_area_independent",
+  "definition": "data-locflow skill: references/05_figure_specification.md",
+  "output_directory": "runs/<project>/<run_id>/products/figures",
+  "format": "PNG",
+  "figures": [
+    {
+      "id": "01",
+      "stem": "01_catalog_temporal_counts",
+      "category": "core",
+      "purpose": "日/月或配置时段事件数、实际来源堆叠",
+      "implementation_status": "specified_not_implemented",
+      "artifact_status": "not_generated"
+    },
+    {
+      "id": "02",
+      "stem": "02_epicenter_station_map",
+      "category": "core",
+      "purpose": "震中、台站、深度色标",
+      "implementation_status": "specified_not_implemented",
+      "artifact_status": "not_generated"
+    },
+    {
+      "id": "03",
+      "stem": "03_epicenter_map",
+      "category": "core",
+      "purpose": "无台站的震中图",
+      "implementation_status": "specified_not_implemented",
+      "artifact_status": "not_generated"
+    },
+    {
+      "id": "04",
+      "stem": "04_epicenter_period_maps",
+      "category": "core",
+      "purpose": "分时段震中对照",
+      "implementation_status": "specified_not_implemented",
+      "artifact_status": "not_generated"
+    },
+    {
+      "id": "05",
+      "stem": "05_magnitude_time",
+      "category": "core",
+      "purpose": "震级—时间",
+      "implementation_status": "specified_not_implemented",
+      "artifact_status": "not_generated"
+    },
+    {
+      "id": "06",
+      "stem": "06_frequency_magnitude_gr",
+      "category": "core",
+      "purpose": "非累计/累计FMD、Mc与GR诊断",
+      "implementation_status": "specified_not_implemented",
+      "artifact_status": "not_generated"
+    },
+    {
+      "id": "07",
+      "stem": "07_depth_distribution",
+      "category": "core",
+      "purpose": "深度直方图/ECDF与来源或阶段对照",
+      "implementation_status": "specified_not_implemented",
+      "artifact_status": "not_generated"
+    },
+    {
+      "id": "08",
+      "stem": "08_catalog_qc_overview",
+      "category": "core",
+      "purpose": "来源、阶段、定位/震级QC及基本分布",
+      "implementation_status": "specified_not_implemented",
+      "artifact_status": "not_generated"
+    },
+    {
+      "id": "09",
+      "stem": "09_initial_velocity_model",
+      "category": "core",
+      "purpose": "实际初始模型的Vp、可用Vs随深度变化",
+      "implementation_status": "specified_not_implemented",
+      "artifact_status": "not_generated"
+    },
+    {
+      "id": "10",
+      "stem": "10_stage_velocity_models",
+      "category": "diagnostic",
+      "purpose": "各阶段实际输入及已接受输出模型对照",
+      "implementation_status": "specified_not_implemented",
+      "artifact_status": "not_generated"
+    },
+    {
+      "id": "11",
+      "stem": "11_station_waveform_availability",
+      "category": "diagnostic",
+      "purpose": "台站×日期矩阵及覆盖",
+      "implementation_status": "specified_not_implemented",
+      "artifact_status": "not_generated"
+    },
+    {
+      "id": "12",
+      "stem": "12_phase_detection_quality",
+      "category": "diagnostic",
+      "purpose": "P/S概率、时段拾取数与台站分布",
+      "implementation_status": "specified_not_implemented",
+      "artifact_status": "not_generated"
+    },
+    {
+      "id": "13",
+      "stem": "13_phase_association_quality",
+      "category": "diagnostic",
+      "purpose": "关联/未关联拾取、每事件P/S数、台站数/GAP",
+      "implementation_status": "specified_not_implemented",
+      "artifact_status": "not_generated"
+    },
+    {
+      "id": "14",
+      "stem": "14_stage_retention",
+      "category": "diagnostic",
+      "purpose": "候选至正式接受的阶段保留链",
+      "implementation_status": "specified_not_implemented",
+      "artifact_status": "not_generated"
+    },
+    {
+      "id": "15",
+      "stem": "15_absolute_relative_location_comparison",
+      "category": "diagnostic",
+      "purpose": "绝对/相对定位地图与剖面、水平/深度/时刻变化",
+      "implementation_status": "specified_not_implemented",
+      "artifact_status": "not_generated"
+    },
+    {
+      "id": "16",
+      "stem": "16_location_residual_quality",
+      "category": "diagnostic",
+      "purpose": "绝对P/S、目录差分、互相关差分残差及可用的距离/台站对照",
+      "implementation_status": "specified_not_implemented",
+      "artifact_status": "not_generated"
+    },
+    {
+      "id": "17",
+      "stem": "17_formal_location_uncertainty",
+      "category": "diagnostic",
+      "purpose": "形式误差分量分布与阶段对照",
+      "implementation_status": "specified_not_implemented",
+      "artifact_status": "not_generated"
+    },
+    {
+      "id": "18",
+      "stem": "18_observed_travel_time",
+      "category": "diagnostic",
+      "purpose": "P/S走时—震源距与稳健分箱",
+      "implementation_status": "specified_not_implemented",
+      "artifact_status": "not_generated"
+    },
+    {
+      "id": "19",
+      "stem": "19_magnitude_quality",
+      "category": "diagnostic",
+      "purpose": "有效测幅台数、MAD、质量及可用的站次残差",
+      "implementation_status": "specified_not_implemented",
+      "artifact_status": "not_generated"
+    },
+    {
+      "id": "20",
+      "stem": "20_waveform_record_sections",
+      "category": "diagnostic",
+      "purpose": "最大或指定代表事件波形剖面",
+      "implementation_status": "specified_not_implemented",
+      "artifact_status": "not_generated"
+    },
+    {
+      "id": "21",
+      "stem": "21_bootstrap_location_uncertainty",
+      "category": "diagnostic",
+      "purpose": "已完成扰动试验的水平/垂向统计",
+      "implementation_status": "specified_not_implemented",
+      "artifact_status": "not_generated"
+    },
+    {
+      "id": "22",
+      "stem": "22_template_matching_diagnostics",
+      "category": "diagnostic",
+      "purpose": "候选→本地定位→去重→新增漏斗、相关系数与模板来源",
+      "implementation_status": "specified_not_implemented",
+      "artifact_status": "not_generated"
+    },
+    {
+      "id": "30",
+      "stem": "30_regional_geology",
+      "category": "optional",
+      "purpose": "地质多边形、分类字典、出处/许可/CRS",
+      "implementation_status": "specified_not_implemented",
+      "artifact_status": "not_generated"
+    },
+    {
+      "id": "31",
+      "stem": "31_fault_block_overlay",
+      "category": "optional",
+      "purpose": "外部断层/活动地块线、版本及CRS",
+      "implementation_status": "specified_not_implemented",
+      "artifact_status": "not_generated"
+    },
+    {
+      "id": "32",
+      "stem": "32_external_catalog_validation",
+      "category": "optional",
+      "purpose": "项目选择的独立参考目录及明确匹配对",
+      "implementation_status": "specified_not_implemented",
+      "artifact_status": "not_generated"
+    },
+    {
+      "id": "33",
+      "stem": "33_external_catalog_reference_map",
+      "category": "optional",
+      "purpose": "独立仪器或历史目录、原始时空/震级信息",
+      "implementation_status": "specified_not_implemented",
+      "artifact_status": "not_generated"
+    },
+    {
+      "id": "34",
+      "stem": "34_external_magnitude_time",
+      "category": "optional",
+      "purpose": "同一参考目录的区域子集",
+      "implementation_status": "specified_not_implemented",
+      "artifact_status": "not_generated"
+    },
+    {
+      "id": "35",
+      "stem": "35_profile_sections",
+      "category": "optional",
+      "purpose": "项目指定测线原点/方位/范围/带宽",
+      "implementation_status": "specified_not_implemented",
+      "artifact_status": "not_generated"
+    },
+    {
+      "id": "36",
+      "stem": "36_seismicity_3d",
+      "category": "optional",
+      "purpose": "目录选择、投影与坐标基准",
+      "implementation_status": "specified_not_implemented",
+      "artifact_status": "not_generated"
+    },
+    {
+      "id": "37",
+      "stem": "37_seismicity_3d_interactive",
+      "category": "optional",
+      "purpose": "同36，交互插件已启用",
+      "implementation_status": "specified_not_implemented",
+      "artifact_status": "not_generated"
+    },
+    {
+      "id": "38",
+      "stem": "38_seismicity_density",
+      "category": "optional",
+      "purpose": "网格/平滑配置及可选地形",
+      "implementation_status": "specified_not_implemented",
+      "artifact_status": "not_generated"
+    },
+    {
+      "id": "39",
+      "stem": "39_mechanism_repeater_analysis",
+      "category": "optional",
+      "purpose": "已完成并独立验收的机制或重复地震专题结果",
+      "implementation_status": "specified_not_implemented",
+      "artifact_status": "not_generated"
+    }
+  ],
+  "execution_note": "Design inventory only; no case data, geographic layers or prior products are implicitly loaded."
+}
