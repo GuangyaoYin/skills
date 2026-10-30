@@ -1,9 +1,12 @@
 # research-ppt · 科研汇报 PPT
 
-为日常组会、导师讨论、自己的研究与阶段进展，以及独立的文献汇报模式，制作可编辑 PowerPoint。先共同梳理论证主线与逐页安排，再制作文件。
+为日常组会、导师讨论、自己的研究与阶段进展，以及独立的文献汇报模式，制作可编辑 PowerPoint。先询问是否检索文献补充背景，结合证据用 `grill-me` 共同梳理背景与科学问题，确定逐页安排后再制作文件。
 
 ## 工作方式
 
+- 开始先询问是否联网补充研究背景。同意后检索可用本地知识库和网络原始文献，围绕本次研究组织背景，找到对应文章及合适原图。
+- 将页面论点与原文结论、图号/面板及适用条件绑定。没有原图或证据不足时明确缺口，不以装饰图或未核验引文替代。
+- 无论是否联网，均在制作前使用 `grill-me`／`grilling` 逐轮梳理背景逻辑、科学问题、候选解释与证据边界；已认可的安排可以复用。
 - 根据怎样更好理解问题、怎样更合逻辑展开论述来组织页面，不固定章节和页数。
 - 正文保留必要的方法、数据、关键推理及深入讨论，主动指出证据缺口与替代解释。
 - 文献汇报覆盖问题、证明方式、方法、数据、局限、对自身研究的用途和领域价值。
@@ -21,11 +24,20 @@
 python ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-github.py --repo GuangyaoYin/skills --path skills/research-ppt
 ```
 
+`grilling` 是访谈实现；使用 `$grill-me` 入口时还需其别名。尚未安装二者时执行：
+
+```bash
+python ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-github.py --repo mattpocock/skills --path skills/productivity/grilling skills/productivity/grill-me
+```
+
+已经安装其中一项时，仅在 `--path` 后列出缺少项；仅安装 `grill-me` 别名不足以执行访谈。依赖位置：[mattpocock/skills](https://github.com/mattpocock/skills/tree/main/skills/productivity)。安装后重启 Codex。
+
 ## 使用
 
 ```text
 用 $research-ppt 根据这些研究笔记、结果图和已有PPT，
-先与我梳理汇报主线和逐页安排，再制作组会PPT。
+先问我是否需要结合本地知识库和联网文献补充背景及论文原图，
+再用 $grill-me 与我梳理背景逻辑、科学问题和逐页安排，最后制作组会PPT。
 保留必要的方法细节，并展开结果解释与深入讨论。
 ```
 
@@ -55,13 +67,15 @@ python skills/research-ppt/scripts/inspect_research_pptx.py /path/to/deck.pptx -
 python -m unittest discover -s skills/research-ppt/tests -v
 ```
 
-开发阶段已通过技能结构验证、7 项检查器测试及 3 个场景的只读行为审查；尚未用真实科研材料完整试制 PPT。
+初版开发通过技能结构验证、7 项检查器测试及 3 个场景的只读行为审查。本次背景与访谈流程另经 2 个场景的只读演练；这些检查不等于用真实科研材料完成了 PPT 制作与应用内编辑验证。
 
 ## 文件
 
 - `SKILL.md`：触发边界、共同规划流程和交付要求。
 - `agents/openai.yaml`：技能显示信息与调用提示。
 - `references/story-and-evidence.md`：研究进展与文献汇报的论证组织。
+- `references/background-literature-and-figures.md`：本地与网络文献检索、原图提取及图文证据对应。
+- `references/background-grilling.md`：用 grill-me 梳理背景逻辑与科学问题。
 - `references/slide-design.md`：页面、字体、图件、来源和备注规范。
 - `references/native-equations-and-qa.md`：原生公式要求与验证边界。
 - `scripts/inspect_research_pptx.py`：只读 PPTX 包结构检查。

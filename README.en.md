@@ -19,7 +19,7 @@ Restart Codex after installation.
 | Skill | Purpose | Repository | Path |
 | --- | --- | --- | --- |
 | `data-locflow` | Research-area-independent LOC-FLOW guidance, project templates, input/catalog checks, magnitude and uncertainty specifications, and figure planning; scientific backends require integration. | [`skills`](https://github.com/GuangyaoYin/skills/tree/main/skills/data-locflow) | `skills/data-locflow` |
-| `research-ppt` | Create editable lab-meeting, supervisor-discussion, research-progress, and paper-reading PowerPoint decks through joint argument and slide planning. | [`skills`](https://github.com/GuangyaoYin/skills/tree/main/skills/research-ppt) | `skills/research-ppt` |
+| `research-ppt` | Create editable research and paper-reading decks with optional local/web background literature and source figures, grill-me scientific-question interviews, and joint slide planning. | [`skills`](https://github.com/GuangyaoYin/skills/tree/main/skills/research-ppt) | `skills/research-ppt` |
 | `nsfc-project-review` | Batch review NSFC proposal PDFs and generate formal Chinese communication-review comments, grades, and funding recommendations. | [`skill-nsfc-project-review`](https://github.com/GuangyaoYin/skill-nsfc-project-review) | `.` |
 | `paper2pdf` | Format academic manuscripts into journal-style DOCX/PDF layouts using journal templates, publisher guidelines, sample PDFs, or SciSpace links. | [`skill-paper2pdf`](https://github.com/GuangyaoYin/skill-paper2pdf) | `paper2pdf` |
 | `review-response-docx` | Draft point-by-point reviewer responses and create formatted response letters, marked revised manuscripts, and clean versions. | [`skill-review-response-docx`](https://github.com/GuangyaoYin/skill-review-response-docx) | `review-response-docx` |
@@ -43,6 +43,8 @@ Includes generic workflow references, templates, and management checks. Scientif
 ```bash
 python ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-github.py --repo GuangyaoYin/skills --path skills/research-ppt
 ```
+
+See [research-ppt](skills/research-ppt/README.en.md) for background research, interview dependencies, and usage.
 
 ## Manifest
 

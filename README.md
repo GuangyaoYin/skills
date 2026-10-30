@@ -19,7 +19,7 @@ python ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-github
 | Skill | 用途 | 仓库 | 安装路径 |
 | --- | --- | --- | --- |
 | `data-locflow` | 通用 LOC-FLOW 地震目录流程、项目配置、输入/目录检查、震级与定位误差及绘图规范；科学后端需另行接入。 | [`skills`](https://github.com/GuangyaoYin/skills/tree/main/skills/data-locflow) | `skills/data-locflow` |
-| `research-ppt` | 制作组会、导师讨论与研究进展 PPT，提供独立文献模式，先梳理论证与逐页安排，交付可编辑 PPTX 和备注。 | [`skills`](https://github.com/GuangyaoYin/skills/tree/main/skills/research-ppt) | `skills/research-ppt` |
+| `research-ppt` | 制作组会、导师讨论与研究进展 PPT；按选择检索本地与网络背景文献和原图，用 grill-me 梳理科学问题，再规划并制作可编辑 PPTX。 | [`skills`](https://github.com/GuangyaoYin/skills/tree/main/skills/research-ppt) | `skills/research-ppt` |
 | `nsfc-project-review` | 批量评审国家自然科学基金项目申请书 PDF，生成中文通讯评审意见、评分/资助建议和横向比较。 | [`skill-nsfc-project-review`](https://github.com/GuangyaoYin/skill-nsfc-project-review) | `.` |
 | `paper2pdf` | 将学术论文按期刊模板、出版社指南、样例 PDF 或 SciSpace 链接排版为 DOCX/PDF 风格稿。 | [`skill-paper2pdf`](https://github.com/GuangyaoYin/skill-paper2pdf) | `paper2pdf` |
 | `review-response-docx` | 根据审稿意见和论文原文逐条撰写 Response to Reviewers，并生成返修分析、回复信、标红修订稿和 clean version。 | [`skill-review-response-docx`](https://github.com/GuangyaoYin/skill-review-response-docx) | `review-response-docx` |
@@ -117,6 +117,8 @@ python ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-github
 ```bash
 python ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-github.py --repo GuangyaoYin/skills --path skills/research-ppt
 ```
+
+新增背景检索与 `grill-me` 访谈流程；访谈依赖安装及使用方式见 [research-ppt 说明](skills/research-ppt/README.md)。
 
 ## 机器可读清单
 

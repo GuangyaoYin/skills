@@ -1,6 +1,6 @@
 ---
 name: research-ppt
-description: "Create editable research PowerPoint decks for lab meetings, supervisor discussions, research progress, and a separate paper-reading mode. Use for 科研汇报PPT、研究进展、组会汇报、导师讨论、文献汇报 and scientific slide revisions. Co-design the argument and slide plan before authoring. Project, acceptance, conference, and achievement reports belong to their requested report/template workflow."
+description: "Create editable research PowerPoint decks for lab meetings, supervisor discussions, research progress, and a separate paper-reading mode. Use for 科研汇报PPT、研究进展、组会汇报、导师讨论、文献汇报 and scientific slide revisions. Offer local and web literature research for background, use grill-me to co-design the scientific argument, then plan slides and author. Project, acceptance, conference, and achievement reports belong to their requested report/template workflow."
 ---
 
 # 科研汇报 PPT
@@ -14,21 +14,29 @@ description: "Create editable research PowerPoint decks for lab meetings, superv
 - 识别本次要说明或讨论的问题、材料完整性、已有主线，以及用户给出的时长、页数和语言。未指定时按材料提出建议，不固化章节、页数或学科。
 - 根据当前电脑核验工具、解释器、依赖与字体，不写死另一设备的环境名称或路径。
 
+## 开始先确认背景检索
+
+- 首次梳理本次 PPT 时，先询问：“是否需要上网查询文献，结合你的本地知识库补充研究背景，并寻找对应的论文原图？”本次任务及其延续对话中已有明确答复时沿用，不把其他 PPT 的检索授权当成本次选择。纯字体或局部排版修订无需打断工作再问。
+- 回答“是”：读取 [背景文献与原图](references/background-literature-and-figures.md)，检索可用的本地知识库和网络原始文献，围绕用户的研究内容建立背景论证与对应图件。知识库位置先从当前项目、已知目录或索引定位；确实影响本次论证时再询问定位线索，用户已说明暂不清楚时继续可用材料。
+- 回答“否”：使用已提供及获准读取的本地材料，保留具体文献/图件缺口，不启动联网检索。未答复时可继续这些材料的分析，联网步骤保持待定。
+- 无论是否联网，背景与研究问题的实质梳理均进入下述 `grill-me` 环节；不将“拒绝检索”理解为“跳过共同梳理”。
+
 ## 先共同梳理，再制作
 
 1. 读取材料并定位真实图号、页码、数据字段和研究结论。优先采用用户指定的研究主线、真实图件和结果说明；有逻辑或证据问题时，给出具体理由和可选调整。
-2. 根据问题怎样更好理解、论述怎样更合逻辑组织内容。读取 [论证与证据](references/story-and-evidence.md) 中当前模式的部分。问题、方法、数据、证据、解释和讨论是组织依据，不是固定章节表。
-3. 给出可共同审阅的逐页安排：每页目的、拟用标题、主要图件/公式/数据及其出处、支撑的论点、承接关系和待补信息。不要仅列“背景/方法/结果”等空泛目录。
-4. 与用户确定主线和逐页安排后制作。若用户已经给出并认可安排，直接继续；用户本次明确要求直接成稿时尊重该指令。不要将每页修改都变成新的确认环节。
-5. 依据 [页面与图件规范](references/slide-design.md) 制作本地可编辑 PPTX，并写入简短逐页备注。使用当前环境的 Presentations 技能完成文件制作、渲染和检查；其通用默认值服从本技能中用户已确定的科研表达、字体和可编辑性要求。
-6. 有公式时，先按 [原生公式与检查](references/native-equations-and-qa.md) 验证作者路径，再批量制作。最终检查内容、来源、文字、图件、备注和可编辑性，修复问题后交付。
+2. 按已确认的检索选择整理证据，提出背景如何导向科学问题的初步思路。读取 [论证与证据](references/story-and-evidence.md) 中当前模式的部分；建立“论点—原文结论—图号/面板—适用条件”的对应关系。问题、方法、数据、证据、解释和讨论是组织依据，不是固定章节表。
+3. 按 [背景与问题访谈](references/background-grilling.md) 实际调用已安装的 `grill-me`（及其 `grilling` 实现），用具体材料逐轮检验背景逻辑、知识缺口、研究问题和证据边界。用户回答改变主线时补检索或调整，再继续提问；不要只在方案里写“使用 grill-me”而不执行。
+4. 将梳理结果转为可共同审阅的逐页安排：每页目的、拟用标题、主要图件/公式/数据及其出处、支撑的论点、承接关系和待补信息。背景页采用与论点一致的已核验原图，不仅列“背景/方法/结果”等空泛目录。
+5. 与用户确定背景思路、研究问题和逐页安排后制作；在同一轮审阅中完成共识，不增设重复审批。若本次已完成并认可这些安排，直接继续；用户明确要求跳过访谈、直接成稿时尊重该次指令。纯局部修订不重跑整套流程。
+6. 依据 [页面与图件规范](references/slide-design.md) 制作本地可编辑 PPTX，并写入简短逐页备注。使用当前环境的 Presentations 技能完成文件制作、渲染和检查；其通用默认值服从本技能中用户已确定的科研表达、字体和可编辑性要求。
+7. 有公式时，先按 [原生公式与检查](references/native-equations-and-qa.md) 验证作者路径，再批量制作。最终检查内容、来源、文字、图件、备注和可编辑性，修复问题后交付。
 
 ## 科研表达
 
 - 正文保留支撑论证必需的方法、数据和推导细节，并给出深入讨论。机制解释、矛盾结果、适用条件和局限按理解需要进入正文；不能为了精简或塞进备份页而移走关键步骤。
 - 主动检查因果强度、对照是否成立、参数与数据来源、单位和坐标含义。区分实测/计算结果、解释假设和待验证问题，不把研究未完成、负结果或相互矛盾的结果包装成确定结论。
 - 材料缺失时标明具体缺什么及影响哪些论断。没有证据的地方保留为问题或待补项；不补造数值、结果、引文或图件来源。
-- 允许按需检索并核验外部文献，用于背景、方法依据、结果解释和领域价值。明确区分用户的研究结果、原论文结论及补充文献提供的解释。
+- 遵循本次检索选择，按需检索并核验外部文献，用于背景、方法依据、结果解释和领域价值；用户未同意联网时使用获准的材料并标出缺口。明确区分用户的研究结果、原论文结论及补充文献提供的解释。
 - 文献模式覆盖科学问题、如何证明、方法、数据、证据局限、对自身研究的可用内容，以及该工作解决或提出的问题在领域中的价值；按论证需要安排图件和细节。
 
 ## 已确认的视觉与交付要求

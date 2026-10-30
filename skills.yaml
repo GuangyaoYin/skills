@@ -86,7 +86,7 @@ skills:
     path: skills/research-ppt
     language: zh-CN,en
     category: research-presentation
-    description: Create editable research PowerPoint decks for lab meetings, supervisor discussions, progress reports, and paper reading through joint scientific argument and slide planning.
+    description: Create editable research and paper-reading PowerPoint decks with optional local and online background literature and source figures, grill-me scientific-question interviews, and joint slide planning.
     install: python ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-github.py --repo GuangyaoYin/skills --path skills/research-ppt
 
   - name: data-locflow
