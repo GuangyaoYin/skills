@@ -18,6 +18,7 @@ Restart Codex after installation.
 
 | Skill | Purpose | Repository | Path |
 | --- | --- | --- | --- |
+| `scientific-figure-designer` | Design scientific plots, 3D views, mechanism schematics, and multi-panel figures with evidence-aware layouts, consistent visual encodings, reproducible styling, and export checks. | [`skills`](https://github.com/GuangyaoYin/skills/tree/main/skills/scientific-figure-designer) | `skills/scientific-figure-designer` |
 | `data-locflow` | Research-area-independent LOC-FLOW guidance, project templates, input/catalog checks, magnitude and uncertainty specifications, and figure planning; scientific backends require integration. | [`skills`](https://github.com/GuangyaoYin/skills/tree/main/skills/data-locflow) | `skills/data-locflow` |
 | `research-ppt` | Create editable research and paper-reading decks with optional local/web background literature and source figures, grill-me scientific-question interviews, and joint slide planning. | [`skills`](https://github.com/GuangyaoYin/skills/tree/main/skills/research-ppt) | `skills/research-ppt` |
 | `nsfc-project-review` | Batch review NSFC proposal PDFs and generate formal Chinese communication-review comments, grades, and funding recommendations. | [`skill-nsfc-project-review`](https://github.com/GuangyaoYin/skill-nsfc-project-review) | `.` |
@@ -45,6 +46,14 @@ python ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-github
 ```
 
 See [research-ppt](skills/research-ppt/README.en.md) for background research, interview dependencies, and usage.
+
+## Scientific Figure Designer installation
+
+```bash
+python ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-github.py --repo GuangyaoYin/skills --path skills/scientific-figure-designer
+```
+
+Includes 2D/3D encoding and multi-panel guidance, reference-figure analysis, color and typography conventions, rendering checks, and an optional Matplotlib styling helper. Chinese defaults to SimSun and Latin text to Times New Roman. Automatic skill selection is enabled.
 
 ## Manifest
 

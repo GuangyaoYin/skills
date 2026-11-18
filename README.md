@@ -18,6 +18,7 @@ python ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-github
 
 | Skill | 用途 | 仓库 | 安装路径 |
 | --- | --- | --- | --- |
+| `scientific-figure-designer` | 制作和修改科研数据图、三维视图、机制示意及多面板图；按科学问题组织证据，统一配色、字体和导出，并检查科学含义与可读性。 | [`skills`](https://github.com/GuangyaoYin/skills/tree/main/skills/scientific-figure-designer) | `skills/scientific-figure-designer` |
 | `data-locflow` | 通用 LOC-FLOW 地震目录流程、项目配置、输入/目录检查、震级与定位误差及绘图规范；科学后端需另行接入。 | [`skills`](https://github.com/GuangyaoYin/skills/tree/main/skills/data-locflow) | `skills/data-locflow` |
 | `research-ppt` | 制作组会、导师讨论与研究进展 PPT；按选择检索本地与网络背景文献和原图，用 grill-me 梳理科学问题，再规划并制作可编辑 PPTX。 | [`skills`](https://github.com/GuangyaoYin/skills/tree/main/skills/research-ppt) | `skills/research-ppt` |
 | `nsfc-project-review` | 批量评审国家自然科学基金项目申请书 PDF，生成中文通讯评审意见、评分/资助建议和横向比较。 | [`skill-nsfc-project-review`](https://github.com/GuangyaoYin/skill-nsfc-project-review) | `.` |
@@ -31,6 +32,14 @@ python ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-github
 | `skillscreator` | 将模糊任务想法、示例材料、工作流或已有仓库转化为可安装、可复用、可上架 GitHub 的 Codex skill。 | [`skill-skillscreator`](https://github.com/GuangyaoYin/skill-skillscreator) | `skillscreator` |
 
 ## 安装命令
+
+### scientific-figure-designer
+
+```bash
+python ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-github.py --repo GuangyaoYin/skills --path skills/scientific-figure-designer
+```
+
+涵盖二维／三维编码、多面板论证、配色与字号、可复现绘图和渲染验收；默认中文宋体、西文 Times New Roman。包含五张参考图的设计分析、按需读取的绘图指南，以及可选的 Matplotlib 样式辅助脚本。自动选择策略已启用。
 
 ### data-locflow
 

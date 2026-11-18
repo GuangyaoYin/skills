@@ -97,3 +97,12 @@ skills:
     category: seismology-workflow
     description: Research-area-independent LOC-FLOW workflow guidance, project templates, input and catalogue checks, magnitude and uncertainty specifications, and reproducible figure planning. Scientific backends require separate integration and validation.
     install: python ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-github.py --repo GuangyaoYin/skills --path skills/data-locflow
+
+  - name: scientific-figure-designer
+    repository: GuangyaoYin/skills
+    url: https://github.com/GuangyaoYin/skills/tree/main/skills/scientific-figure-designer
+    path: skills/scientific-figure-designer
+    language: zh-CN,en
+    category: scientific-visualization
+    description: Design and revise scientific plots, 3D views, mechanism schematics, and multi-panel figures with evidence-aware layouts, consistent visual encodings, reproducible styling, and rendering checks.
+    install: python ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-github.py --repo GuangyaoYin/skills --path skills/scientific-figure-designer

@@ -1,0 +1,5 @@
+interface:
+  display_name: "科研绘图"
+  short_description: "Design clear scientific plots and multi-panel figures"
+policy:
+  allow_implicit_invocation: true
